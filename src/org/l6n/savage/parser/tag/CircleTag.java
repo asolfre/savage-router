@@ -21,6 +21,7 @@ class CircleTag extends TagBase {
 
 	protected CircleTag(final TagBase pParent) {
 		super(pParent);
+		setZOrder(99);
 	}
 
 	@Override

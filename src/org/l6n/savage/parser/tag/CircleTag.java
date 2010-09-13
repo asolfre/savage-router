@@ -40,7 +40,8 @@ class CircleTag extends TagBase {
 			mFill = parseColor(pValue);
 			// don't use specified color
 			mFill = Color.argb(200, 255, 128, 0); // slightly transparent orange
-			// get POI colors from here: http://code.google.com/p/osmand/source/detail?r=492
+			// get POI colors from here:
+			// http://code.google.com/p/osmand/source/browse/trunk/OsmAnd/src/net/osmand/render/OsmandRenderer.java
 		} else if ("r".equals(pName)) {
 			mRadius = Float.parseFloat(pValue) * mGroupAttributes.scale;
 			// don't use specified radius
